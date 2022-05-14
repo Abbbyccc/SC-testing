@@ -25,11 +25,9 @@ export async function getStaticProps({ params }) {
 
     const vegetables = await res.json()
 
-    console.log(vegetables)
-
     return {
         props: vegetables,
-        // revalidate: 10,
+        revalidate: 10,
     }
 }
 
