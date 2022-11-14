@@ -463,11 +463,6 @@
                 "imageUrlSmall": "https://cdn.pixabay.com/photo/2014/11/25/16/35/rocket-545381_1280.jpg"
             },
             {
-                "id": "1b8cfdc6-3a95-4eea-8d1c-cee9c38ac721",
-                "name": "Samphire",
-                "imageUrlSmall": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnzvzTFJx4Xir1LzagEgohPPDMMPhcruiXIpKEIjZ2UsFNQGl"
-            },
-            {
                 "id": "e3806f5e-ee44-49b1-b9bf-b58c7f53d901",
                 "name": "Sorrel",
                 "imageUrlSmall": "https://images.freeimages.com/images/small-previews/2a0/wood-sorrel-1551813.jpg"
@@ -520,11 +515,6 @@
                 "imageUrlSmall": "https://images.unsplash.com/photo-1533231040102-5ec7a63e6d0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
             },
             {
-                "id": "bc77ffe8-998f-496c-81cc-ff0adde6320c",
-                "name": "Blackcurrants",
-                "imageUrlSmall": "https://images.unsplash.com/photo-1470596501261-3e4db8613505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-            },
-            {
                 "id": "20cdd1e9-b794-42d7-903a-c5d35f42993e",
                 "name": "Broad Beans",
                 "imageUrlSmall": "https://s3.amazonaws.com/kiteshopify/1ad2563c-29e5-4558-8921-efa8350ff635_preview.jpeg"
@@ -563,11 +553,6 @@
                 "id": "89f7752d-54dd-4141-be7f-68dc0fc98ac4",
                 "name": "Cucumber",
                 "imageUrlSmall": "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-            },
-            {
-                "id": "c08e4995-1c02-48df-b8be-d54592de8374",
-                "name": "Elderflowers",
-                "imageUrlSmall": "https://s3.amazonaws.com/kiteshopify/6a2617c8-82a0-4eab-8fbe-909fffd59aa7_preview.jpeg"
             },
             {
                 "id": "7698c976-4c85-4f2d-9231-b281c9dd882f",
@@ -610,11 +595,6 @@
                 "imageUrlSmall": "https://images.unsplash.com/photo-1498668629810-d79dcafa7617?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
             },
             {
-                "id": "2bbfde86-684b-4dd4-b715-0efa9a5fc2cf",
-                "name": "Redcurrants",
-                "imageUrlSmall": "https://images.unsplash.com/photo-1531054871758-3cfa9fd8a3a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-            },
-            {
                 "id": "de8feb7b-74ae-4d8c-b655-d6e33e835f8f",
                 "name": "Rhubarb",
                 "imageUrlSmall": "https://images.freeimages.com/images/small-previews/532/rhubarb-1318820.jpg"
@@ -628,11 +608,6 @@
                 "id": "097673ba-38c5-4712-8002-dc02fa56dc95",
                 "name": "Runner Beans",
                 "imageUrlSmall": "https://images.pexels.com/photos/185474/pexels-photo-185474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            },
-            {
-                "id": "1b8cfdc6-3a95-4eea-8d1c-cee9c38ac721",
-                "name": "Samphire",
-                "imageUrlSmall": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnzvzTFJx4Xir1LzagEgohPPDMMPhcruiXIpKEIjZ2UsFNQGl"
             },
             {
                 "id": "e3806f5e-ee44-49b1-b9bf-b58c7f53d901",
@@ -700,11 +675,6 @@
                 "id": "0a1a074b-c8d3-41ae-a7fa-5e89931274e1",
                 "name": "Blackberries",
                 "imageUrlSmall": "https://images.unsplash.com/photo-1474480109237-15a7ca8f0685?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-            },
-            {
-                "id": "bc77ffe8-998f-496c-81cc-ff0adde6320c",
-                "name": "Blackcurrants",
-                "imageUrlSmall": "https://images.unsplash.com/photo-1470596501261-3e4db8613505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
             },
             {
                 "id": "138ba7a8-7bd9-45e8-b7ab-a4d69af970cc",
@@ -822,11 +792,6 @@
                 "imageUrlSmall": "https://images.unsplash.com/photo-1498668629810-d79dcafa7617?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
             },
             {
-                "id": "2bbfde86-684b-4dd4-b715-0efa9a5fc2cf",
-                "name": "Redcurrants",
-                "imageUrlSmall": "https://images.unsplash.com/photo-1531054871758-3cfa9fd8a3a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-            },
-            {
                 "id": "9de68963-4044-4320-bdae-a990363f3998",
                 "name": "Red Onions",
                 "imageUrlSmall": "http://eat-seasonal.co.uk/images/food/red-onion.jpg"
@@ -845,11 +810,6 @@
                 "id": "097673ba-38c5-4712-8002-dc02fa56dc95",
                 "name": "Runner Beans",
                 "imageUrlSmall": "https://images.pexels.com/photos/185474/pexels-photo-185474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            },
-            {
-                "id": "1b8cfdc6-3a95-4eea-8d1c-cee9c38ac721",
-                "name": "Samphire",
-                "imageUrlSmall": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnzvzTFJx4Xir1LzagEgohPPDMMPhcruiXIpKEIjZ2UsFNQGl"
             },
             {
                 "id": "e3806f5e-ee44-49b1-b9bf-b58c7f53d901",
@@ -917,11 +877,6 @@
                 "id": "0a1a074b-c8d3-41ae-a7fa-5e89931274e1",
                 "name": "Blackberries",
                 "imageUrlSmall": "https://images.unsplash.com/photo-1474480109237-15a7ca8f0685?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-            },
-            {
-                "id": "bc77ffe8-998f-496c-81cc-ff0adde6320c",
-                "name": "Blackcurrants",
-                "imageUrlSmall": "https://images.unsplash.com/photo-1470596501261-3e4db8613505?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
             },
             {
                 "id": "20cdd1e9-b794-42d7-903a-c5d35f42993e",
@@ -1069,11 +1024,6 @@
                 "imageUrlSmall": "https://images.unsplash.com/photo-1498668629810-d79dcafa7617?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
             },
             {
-                "id": "2bbfde86-684b-4dd4-b715-0efa9a5fc2cf",
-                "name": "Redcurrants",
-                "imageUrlSmall": "https://images.unsplash.com/photo-1531054871758-3cfa9fd8a3a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-            },
-            {
                 "id": "de8feb7b-74ae-4d8c-b655-d6e33e835f8f",
                 "name": "Rhubarb",
                 "imageUrlSmall": "https://images.freeimages.com/images/small-previews/532/rhubarb-1318820.jpg"
@@ -1087,11 +1037,6 @@
                 "id": "097673ba-38c5-4712-8002-dc02fa56dc95",
                 "name": "Runner Beans",
                 "imageUrlSmall": "https://images.pexels.com/photos/185474/pexels-photo-185474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            },
-            {
-                "id": "1b8cfdc6-3a95-4eea-8d1c-cee9c38ac721",
-                "name": "Samphire",
-                "imageUrlSmall": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnzvzTFJx4Xir1LzagEgohPPDMMPhcruiXIpKEIjZ2UsFNQGl"
             },
             {
                 "id": "e3806f5e-ee44-49b1-b9bf-b58c7f53d901",
@@ -1319,11 +1264,6 @@
                 "id": "097673ba-38c5-4712-8002-dc02fa56dc95",
                 "name": "Runner Beans",
                 "imageUrlSmall": "https://images.pexels.com/photos/185474/pexels-photo-185474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            },
-            {
-                "id": "1b8cfdc6-3a95-4eea-8d1c-cee9c38ac721",
-                "name": "Samphire",
-                "imageUrlSmall": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnzvzTFJx4Xir1LzagEgohPPDMMPhcruiXIpKEIjZ2UsFNQGl"
             },
             {
                 "id": "e3806f5e-ee44-49b1-b9bf-b58c7f53d901",

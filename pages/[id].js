@@ -35,17 +35,13 @@ export async function getStaticProps({ params }) {
     //     throw new Error(message)
     // }
     // const vegetables = await res.json()
-    if (vegetables === undefined) {
-        return
-    } else {
-        return {
-            props: {
-                vegetables:
-                    vegetables['ingredients'][0]['parsed'][0]['nutrients'],
-                params: params.id,
-            },
-            revalidate: 6000,
-        }
+
+    return {
+        props: {
+            vegetables: vegetables['ingredients'][0]['parsed'][0]['nutrients'],
+            params: params.id,
+        },
+        revalidate: 6000,
     }
 }
 
