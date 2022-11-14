@@ -8,11 +8,11 @@ import { loadRecipes } from '../lib/loadRecipes.js'
 
 export async function getStaticProps() {
     const allMonths = await loadVeg()
-    const allRecipes = await loadRecipes(['apple', 'carrot'])
-    return { props: { allMonths, allRecipes } }
+    // const allRecipes = await loadRecipes(['apple', 'carrot'])
+    return { props: { allMonths } }
 }
 
-export default function Home({ allMonths, allRecipes }) {
+export default function Home({ allMonths }) {
     const currentMonth = useContext(GlobalMonth)
     const currentMonthData = allMonths[currentMonth]
     // allMonths is an array of objects
