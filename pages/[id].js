@@ -15,7 +15,7 @@ export async function getStaticPaths() {
             id: String(veg).toLowerCase().replace(' ', '-'),
         },
     }))
-
+    console.log(allYearArray)
     return {
         paths: path,
         fallback: false,
