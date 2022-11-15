@@ -6,16 +6,21 @@ import Recipe from '../components/Recipe.js'
 import VegName from '../components/VegName'
 import { loadRecipes } from '../lib/loadRecipes.js'
 
+const currentMonth = new Date().getMonth()
+
 export async function getStaticProps() {
     const allMonths = await loadVeg()
-    const allRecipes = await loadRecipes(['apple', 'carrot'])
-    return { props: { allMonths, allRecipes } }
+    const currentMonthData = allMonths[currentMonth]
+    const currentMonthVegArray = currentMonthData.food.map((veg) => veg.name)
+    const currentMonthsRecipes = await loadRecipes(currentMonthVegArray)
+    return { props: { allMonths, currentMonthsRecipes } }
 }
 
-export default function Home({ allMonths, allRecipes }) {
-    const currentMonth = useContext(GlobalMonth)
-    const currentMonthData = allMonths[currentMonth]
+export default function Home({ allMonths, currentMonthsRecipes }) {
+    // const currentMonth = useContext(GlobalMonth)
+    // const currentMonthData = allMonths[currentMonth]
     // allMonths is an array of objects
+    console.log(currentMonthsRecipes)
     return (
         <div className="bg-pink-200">
             <Head>
@@ -34,8 +39,12 @@ export default function Home({ allMonths, allRecipes }) {
                         Seasonal Calendar{' '}
                     </h1>
                     {/* <p>{currentMonthData.name}</p> */}
-                    {/* <Recipe props={allRecipes} /> */}
+
                     <VegName allMonths={allMonths} index={currentMonth} />
+
+                    {currentMonthsRecipes.fetched.map((recipe) => (
+                        <Recipe key={recipe.label} props={recipe} />
+                    ))}
                 </div>
             </main>
 

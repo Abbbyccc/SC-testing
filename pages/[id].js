@@ -2,6 +2,8 @@
 import { loadVeg } from '../lib/loadVeg.js'
 import Nutrition from '../components/Nutrition.js'
 import { loadNutritionFacts } from '../lib/loadNutritionFacts.js'
+import Recipe from '../components/Recipe.js'
+import { loadRecipes } from '../lib/loadRecipes.js'
 
 // export async function getStaticPaths() {
 //     const allveg = await loadVeg()
@@ -24,7 +26,8 @@ import { loadNutritionFacts } from '../lib/loadNutritionFacts.js'
 
 export async function getServerSideProps({ params }) {
     const vegetables = await loadNutritionFacts({ params })
-
+    const currentMonthVegRecipeArray = [params.id]
+    const currentMonthsRecipes = await loadRecipes(currentMonthVegRecipeArray)
     // const res = await fetch(
     //     `https://api.edamam.com/api/nutrition-data?app_id=cd596177&app_key=%20d3aae1ee2f6f3ae55aebc8f0d4c2662c&nutrition-type=logging&ingr=${params.id}`
     // )
@@ -42,6 +45,7 @@ export async function getServerSideProps({ params }) {
                 vegetables:
                     vegetables['ingredients'][0]['parsed'][0]['nutrients'],
                 params: params.id,
+                currentMonthsRecipes: currentMonthsRecipes,
             },
         }
     }
@@ -51,7 +55,11 @@ export async function getServerSideProps({ params }) {
 //     error.message // 'An error has occurred: 404'
 // })
 
-export default function SingleVeg({ vegetables, params }) {
+export default function SingleVeg({
+    vegetables,
+    params,
+    currentMonthsRecipes,
+}) {
     const arr = [
         vegetables.VITD,
         vegetables.ENERC_KCAL,
@@ -87,6 +95,10 @@ export default function SingleVeg({ vegetables, params }) {
                     )}
                 </tbody>
             </table>
+            <h2>Recipes</h2>
+            {currentMonthsRecipes.fetched.map((recipe) => (
+                <Recipe key={recipe.label} props={recipe} />
+            ))}
         </>
     )
 }
