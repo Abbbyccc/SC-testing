@@ -3,27 +3,26 @@ import { loadVeg } from '../lib/loadVeg.js'
 import Nutrition from '../components/Nutrition.js'
 import { loadNutritionFacts } from '../lib/loadNutritionFacts.js'
 
-export async function getStaticPaths() {
-    const allveg = await loadVeg()
-    const allYearArray = []
-    for (const month of allveg) {
-        allYearArray.push(month.food.map((veg) => veg.name))
-    }
-    const flatPath = allYearArray.flat()
-    const path = flatPath.map((veg) => ({
-        params: {
-            id: String(veg).toLowerCase().replace(' ', '-'),
-        },
-    }))
-    console.log(allYearArray)
-    return {
-        paths: path,
-        fallback: false,
-    }
-}
+// export async function getStaticPaths() {
+//     const allveg = await loadVeg()
+//     const allYearArray = []
+//     for (const month of allveg) {
+//         allYearArray.push(month.food.map((veg) => veg.name))
+//     }
+//     const flatPath = allYearArray.flat()
+//     const path = flatPath.map((veg) => ({
+//         params: {
+//             id: String(veg).toLowerCase().replace(' ', '-'),
+//         },
+//     }))
 
-export async function getStaticProps({ params }) {
-    console.log(params)
+//     return {
+//         paths: path,
+//         fallback: false,
+//     }
+// }
+
+export async function getServerSideProps({ params }) {
     const vegetables = await loadNutritionFacts({ params })
 
     // const res = await fetch(
@@ -36,7 +35,7 @@ export async function getStaticProps({ params }) {
     // }
     // const vegetables = await res.json()
     if (vegetables['ingredients'][0]['parsed'] === undefined) {
-        return { notFound: true }
+        return { notFound: true } //return 404 page
     } else {
         return {
             props: {
@@ -44,7 +43,6 @@ export async function getStaticProps({ params }) {
                     vegetables['ingredients'][0]['parsed'][0]['nutrients'],
                 params: params.id,
             },
-            revalidate: 6000,
         }
     }
 }

@@ -11,12 +11,12 @@ export default function Nav() {
                     <div>
                         <div className="flex items-center justify-between py-3 md:py-5 md:block">
                             <Link href="/">
-                                <h3 className="text-2xl text-white font-bold">
+                                <p className="text-2xl text-white font-bold">
                                     Logo
-                                </h3>
+                                </p>
                             </Link>
                             <div className="md:hidden">
-                                <button
+                                <button aria-label="Menu Button"
                                     className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                     onClick={() => setNavbar(!navbar)}
                                 >
