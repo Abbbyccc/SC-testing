@@ -13,7 +13,7 @@ export async function getStaticProps() {
     const currentMonthData = allMonths[currentMonth]
     const currentMonthVegArray = currentMonthData.food.map((veg) => veg.name)
     const currentMonthsRecipes = await loadRecipes(currentMonthVegArray)
-    return { props: { allMonths, currentMonthsRecipes } }
+    return { props: { allMonths, currentMonthsRecipes }, revalidate: 60 }
 }
 
 export default function Home({ allMonths, currentMonthsRecipes }) {
